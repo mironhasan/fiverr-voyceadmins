@@ -1,0 +1,39 @@
+
+
+
+
+/*========================================
+            ALL COMMON STYLE
+=========================================*/
+@import '1-helpers/typography';
+@import '1-helpers/variable';
+@import '1-helpers/mixin';
+@import '1-helpers/tags';
+@import '1-helpers/class';
+
+
+/*========================================
+            ALL COMPONENTS STYLE
+=========================================*/
+@import '2-components/section';
+@import '2-components/button';
+@import '2-components/nav-tabs';
+
+
+/*========================================
+            ALL ELEMENTS STYLE
+=========================================*/
+@import '3-elements/price-card';
+@import '3-elements/service-card';
+@import '3-elements/feature-wrap';
+
+
+/*========================================
+             ALL LAYOUTS STYLE
+=========================================*/
+@import '4-layouts/single-banner';
+@import '4-layouts/header-top';
+@import '4-layouts/header';
+@import '4-layouts/price';
+@import '4-layouts/call2action';
+@import '4-layouts/footer';

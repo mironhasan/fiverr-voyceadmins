@@ -1,0 +1,67 @@
+
+/*-----------------------------
+        HEADER TOP LAYOUT
+------------------------------*/ 
+.header-top {
+    padding: 10px 0px;
+    background-color: #f3f5fb;
+}
+
+.header-top-content {
+    @include flex__center__between;
+}
+
+.header-top-group {
+    @include flex__center;
+
+    a,
+    button {
+        gap: 8px;
+        font-size: 15px;
+        font-weight: 500;
+        margin-right: 25px;
+        padding-right: 25px;
+        border-right: 1px solid var(--border);
+        color: var(--text);
+        @include flex__center;
+        @include cursor__transition;
+
+        &:hover {
+            color: var(--primary);
+        }
+
+        i {
+            font-size: 14px;
+        }
+
+        &:last-child {
+            margin: 0px;
+            padding: 0px;
+            border: none;
+        }
+    }
+}
+
+//========================================
+//      RESPONIVE HEADER TOP STYLE
+//========================================
+@media (max-width: 380px) {
+    .header-select {
+        margin-left: 20px;
+        padding-left: 20px;
+
+        i {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .header-info-group {
+        display: none;
+    }
+
+    .header-select-group {
+        width: 100%;
+    }
+}

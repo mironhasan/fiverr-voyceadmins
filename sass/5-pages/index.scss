@@ -1,0 +1,139 @@
+
+
+
+@import "../1-helpers/_mixin.scss";
+
+
+/*========================================
+            BANNER PART STYLE
+=========================================*/
+.banner-overlay {
+    padding: 175px 0px 95px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.banner-content {
+    margin-right: 30px;
+    position: relative;
+
+    img {
+        animation: fly 5s linear infinite;
+        position: absolute;
+        top: -50px;
+        left: 50px;
+    }
+
+    h1 {
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 60px;
+        margin-bottom: 20px;
+        letter-spacing: -1.5px;
+        text-transform: capitalize;
+
+        span {
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    p {
+        margin-bottom: 45px;
+    }
+
+    div {
+        @include flex__center__start;
+        gap: 25px;
+    }
+}
+
+.banner-image {
+    img {
+        width: 100%;
+        animation: miron 5s linear infinite;
+    }
+}
+
+@keyframes fly {
+    0% {
+      transform: rotateX(-0deg);
+      left: 150px;
+      top: -120px;
+    }
+    50% {
+        transform: rotateX(-50deg);
+        left: 50px;
+        top: -50px;
+    }
+    100% {
+        transform: rotateX(-0deg);
+        left: 150px;
+        top: -120px;
+    }
+}
+
+@keyframes miron {
+    0% {
+      transform: translateY(20px) rotateY(-25deg);
+    }
+    50% {
+        transform: translateY(-20px) rotateY(-10deg);
+    }
+    100% {
+        transform: translateY(20px) rotateY(-25deg);
+    }
+}
+
+
+@media (max-width: 991px) {
+    .banner-content {
+        text-align: center;
+        margin-right: 0px;
+
+        p {
+            margin-right: 0px;
+        }
+    }
+
+    .banner-image {
+        display: none;
+    }
+}
+
+@media (max-width: 575px) {
+    .banner-part {
+        padding: 120px 0px 65px;
+    }
+
+    .banner-content {
+        h1 {
+            font-size: 38px;
+            line-height: 48px;
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+    .banner-part {
+        padding: 135px 0px 80px;
+    }
+
+    .banner-content {
+        h1 {
+            font-size: 45px;
+            line-height: 55px;
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .banner-content {
+        h1 {
+            font-size: 55px;
+            line-height: 65px;
+        }
+    }
+}
+
+
