@@ -27,3 +27,16 @@
         text-transform: capitalize;
     }
 }
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .feature-wrap {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .feature-icon {
+        i {
+            margin-right: 0px;
+        }
+    }
+}

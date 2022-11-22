@@ -45,23 +45,14 @@
 //========================================
 //      RESPONIVE HEADER TOP STYLE
 //========================================
-@media (max-width: 380px) {
-    .header-select {
-        margin-left: 20px;
-        padding-left: 20px;
-
-        i {
+@media (max-width: 991px) {
+    .header-top-group {
+        &:first-child {
             display: none;
         }
-    }
-}
 
-@media (max-width: 991px) {
-    .header-info-group {
-        display: none;
-    }
-
-    .header-select-group {
-        width: 100%;
+        &:last-child {
+            width: 100%;
+        }
     }
 }

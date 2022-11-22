@@ -56,7 +56,8 @@
     }
 }
 
-.navbar-responsive {
+.navbar-header,
+.header-menu {
     display: none;
 }
 
@@ -64,7 +65,36 @@
 //         RESPONIVE HEADER STYLE
 //========================================
 @media (max-width: 1199px) {
-    .nav-sidebar {
+    .header-part.active {
+        padding: 10px 0px;
+    }
+    
+    .header-menu {
+        display: block;
+
+        i {
+            width: 35px;
+            height: 35px;
+            font-size: 16px;
+            line-height: 36px;
+            border-radius: 50%;
+            text-align: center;
+            display: inline-block;
+            color: var(--text);
+            background: var(--chalk);
+            @include cursor__transition;
+    
+            &:hover {
+                color: var(--white);
+                background: var(--primary);
+            }
+        }
+    }
+
+    .header-navbar {
+        flex-direction: column;
+        align-items: self-start;
+        justify-content: flex-start;
         position: fixed;
         top: 0px;
         left: -300px;
@@ -74,9 +104,14 @@
         background: var(--white);
         box-shadow: 15px 0px 25px 0px rgba(0, 0, 0, 0.3);
         @include cursor__transition;
+
+        .btn {
+            width: fit-content;
+            margin: 0 auto;
+        }
     }
     
-    .nav-sidebar.active {
+    .header-navbar.active {
         left: 0px;
     }
 
@@ -86,11 +121,12 @@
         }
     }
     
-    .nav-header {
+    .navbar-header {
+        width: 100%;
         display: block;
-        text-align: center;
         position: relative;
-        padding: 15px 0px;
+        text-align: center;
+        padding: 15px;
         border-bottom: 1px solid var(--border);
     
         a {
@@ -101,7 +137,7 @@
         }
     }
     
-    .nav-close {
+    .navbar-close {
         position: absolute;
         top: 50%;
         right: -18px;
@@ -127,18 +163,19 @@
     }
     
     .navbar-list {
-        height: 100%;
+        width: 100%;
         overflow-y: scroll;
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
-        max-height: calc(100vh - 125px);
-    }
-    
-    .navbar-item {
-        width: 100%;
-        margin: 0px;
-        display: block;
+        max-height: calc(100vh - 198px);
+        gap: 0px;
+
+        li {
+            width: 100%;
+            margin: 0px;
+            display: block;
+        }
     }
     
     .navbar-link {
@@ -150,21 +187,6 @@
         &:hover {
             color: var(--primary);
             background: var(--bs-light);
-        }
-    }
-    
-    .nav-footer {
-        padding: 15px 0px;
-        text-align: center;
-        display: block;
-    
-        p {
-            font-size: 15px;
-            color: var(--gray);
-    
-            a {
-                color: var(--primary);
-            }
         }
     }
 }

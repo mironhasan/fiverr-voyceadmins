@@ -13,7 +13,7 @@
 .footer-brand {
     a {
         img {
-            width: 200px;
+            height: 45px;
             margin-bottom: 25px;
         }
     }
@@ -33,59 +33,6 @@
                 font-weight: 500;
                 text-transform: capitalize;
             }
-        }
-    }
-}
-
-.footer-news {
-    margin-left: 25px;
-
-    h4 {
-        margin-bottom: 10px;
-        color: var(--chalk);
-        text-transform: capitalize;
-    }
-
-    p {
-        width: 500px;
-        font-size: 17px;
-        margin-bottom: 25px;
-        color: var(--light);
-    }
-}
-
-.news-form {
-    @include flex__center;
-
-    input {
-        width: 100%;
-        height: 60px;
-        font-size: 16px;
-        padding: 0px 20px;
-        margin-right: 20px;
-        color: var(--white);
-        border: 2px solid var(--primary-light);
-    }
-
-    button {
-        height: 60px;
-        font-size: 16px;
-        font-weight: 500;
-        padding: 0px 35px;
-        text-transform: uppercase;
-        color: var(--white);
-        background: var(--primary);
-        @include flex__center;
-        @include cursor__transition;
-
-        &:hover {
-            color: var(--primary);
-            background: var(--chalk);
-        }
-
-        i {
-            font-size: 16px;
-            margin-right: 8px;
         }
     }
 }
@@ -173,10 +120,9 @@
     }
 
     .action-badge {
-        display: grid;
-        grid-gap: 15px;
-        grid-template-columns: repeat(2, 0fr);
-        grid-template-rows: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
     
         img {
             height: 60px;
@@ -184,10 +130,9 @@
     }
 
     .action-card {
-        display: grid;
-        grid-gap: 15px;
-        grid-template-columns: repeat(4, 0fr);
-        grid-template-rows: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
     
         img {
             width: 60px;
@@ -195,10 +140,11 @@
     }
 
     .action-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+
         li {
-            margin-right: 12px;
-            display: inline-block;
-    
             a {
                 width: 50px;
                 height: 50px;
@@ -249,10 +195,6 @@
         margin-bottom: 50px;
     }
 
-    .footer-news {
-        margin-left: 0px;
-    }
-
     .footer-widget {
         margin-bottom: 30px;
     }
@@ -271,13 +213,11 @@
     }
 
     .footer-bottom {
-        margin-top: 0px;
-        padding: 20px 0px 100px;
         position: relative;
+        margin-top: 0px;
 
         p {
             font-size: 15px;
-            margin-bottom: 12px;
         }
     }
 }
@@ -285,23 +225,6 @@
 @media (max-width: 575px) {
     .footer-part {
         padding: 60px 0px 0px;
-    }
-
-    .footer-news {
-        text-align: center;
-
-        p {
-            width: 100%;
-        }
-    }
-
-    .news-form {
-        flex-direction: column;
-
-        input {
-            margin-right: 0px;
-            margin-bottom: 30px;
-        }
     }
 
     .footer-action {

@@ -58,10 +58,14 @@
 @media (max-width: 767px) {
     .section-heading {
         margin-bottom: 30px;
-    }
 
-    .section-title {
-        font-size: 28px;
+        p {
+            font-size: 15px;
+        }
+
+        h2 {
+            font-size: 28px;
+        }
     }
 }
 
