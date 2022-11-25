@@ -393,6 +393,55 @@ body {
     padding: 8px 22px;
   }
 }
+/*-----------------------------
+    SLIDER ARROW COMPONENT
+------------------------------*/
+.slider-arrow:hover .dandik,
+.slider-arrow:hover .bamdik {
+  visibility: visible;
+  opacity: 1;
+}
+
+.dandik,
+.bamdik {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 14px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: var(--primary);
+  background: var(--white);
+  text-shadow: var(--primary-tshadow);
+  -webkit-box-shadow: var(--primary-bshadow);
+          box-shadow: var(--primary-bshadow);
+  visibility: hidden;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 1;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+.dandik:hover,
+.bamdik:hover {
+  color: var(--white);
+  background: var(--primary);
+}
+
+.dandik {
+  right: -10px;
+}
+
+.bamdik {
+  left: -10px;
+}
+
 /*========================================
             ALL ELEMENTS STYLE
 =========================================*/
@@ -400,7 +449,7 @@ body {
         PRICE CARD ELEMENT
 ------------------------------*/
 .price-card {
-  padding: 0px 70px 50px;
+  padding: 0px 50px 50px;
   margin: 65px 10px 0px;
   background: var(--rgb-gradient);
   text-align: center;
@@ -426,6 +475,7 @@ body {
   text-transform: uppercase;
 }
 .price-card p {
+  font-size: 16px;
   margin-bottom: 20px;
   text-transform: capitalize;
 }
@@ -438,7 +488,8 @@ body {
 }
 .price-card ul li {
   font-size: 15px;
-  margin: 10px 0px;
+  line-height: 20px;
+  margin: 15px 0px;
   text-transform: capitalize;
 }
 .price-card ul li span,
@@ -453,7 +504,7 @@ body {
 .price-card ul li del::before,
 .price-card ul li a::before {
   font-size: 15px;
-  margin-top: 7px;
+  margin-top: 2px;
   line-height: 15px;
   color: var(--primary);
   font-weight: 900;
@@ -567,19 +618,9 @@ body {
   background: var(--white);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1199px) {
   .price-card {
-    padding: 0px 35px 50px;
-  }
-}
-@media (min-width: 501px) and (max-width: 576px) {
-  .price-card {
-    padding: 0px 50px 50px;
-  }
-}
-@media (min-width: 768px) and (max-width: 1199px) {
-  .price-card {
-    padding: 0px 50px 50px;
+    padding: 0px 40px 50px;
   }
 }
 /*-----------------------------

@@ -2,7 +2,7 @@
         PRICE CARD ELEMENT
 ------------------------------*/ 
 .price-card {
-    padding: 0px 70px 50px;
+    padding: 0px 50px 50px;
     margin: 65px 10px 0px;
     background: var(--rgb-gradient);
     text-align: center;
@@ -30,6 +30,7 @@
     }
 
     p {
+        font-size: 16px;
         margin-bottom: 20px;
         text-transform: capitalize;
     }
@@ -43,7 +44,8 @@
 
         li {
             font-size: 15px;
-            margin: 10px 0px;
+            line-height: 20px;
+            margin: 15px 0px;
             text-transform: capitalize;
 
             span,
@@ -55,7 +57,7 @@
 
                 &::before {
                     font-size: 15px;
-                    margin-top: 7px;
+                    margin-top: 2px;
                     line-height: 15px;
                     color: var(--primary);
                     font-weight: 900;
@@ -195,20 +197,8 @@
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 1199px) {
     .price-card {
-        padding: 0px 35px 50px;
-    }
-}
-
-@media (min-width: 501px) and (max-width: 576px) {
-    .price-card {
-        padding: 0px 50px 50px;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1199px) {
-    .price-card {
-        padding: 0px 50px 50px;
+        padding: 0px 40px 50px;
     }
 }
