@@ -29,6 +29,7 @@ h6 {
   --white: #ffffff;
   --light: #bbbddd;
   --chalk: #f9f9f9;
+  --focus: #f0f8ff;
   --border: #e8e8e8;
   --heading: #39404a;
   --primary: #005ee0;
@@ -451,7 +452,7 @@ body {
 .price-card {
   padding: 0px 50px 50px;
   margin: 65px 10px 0px;
-  background: var(--rgb-gradient);
+  background: var(--focus);
   text-align: center;
 }
 .price-card i {
@@ -465,7 +466,7 @@ body {
   text-align: center;
   display: inline-block;
   color: var(--white);
-  background: var(--gradient);
+  background: var(--primary);
   border: 10px solid var(--white);
 }
 .price-card h3 {
@@ -573,7 +574,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: var(--white);
-  background: var(--gradient);
+  background: var(--primary);
 }
 .price-card small {
   font-size: 16px;
@@ -587,7 +588,7 @@ body {
 }
 
 .price-card.active {
-  background: var(--gradient);
+  background: var(--primary);
 }
 .price-card.active h3,
 .price-card.active h4,
@@ -741,7 +742,7 @@ body {
   font-size: 38px;
   margin-right: 20px;
   display: inline-block;
-  background: var(--gradient);
+  background: var(--primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1112,7 +1113,7 @@ body {
   font-weight: 800;
   margin-bottom: 15px;
   letter-spacing: -1.5px;
-  background: var(--gradient);
+  background: var(--primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

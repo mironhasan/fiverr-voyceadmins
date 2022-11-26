@@ -4,7 +4,7 @@
 .price-card {
     padding: 0px 50px 50px;
     margin: 65px 10px 0px;
-    background: var(--rgb-gradient);
+    background: var(--focus);
     text-align: center;
 
     i {
@@ -18,7 +18,7 @@
         text-align: center;
         display: inline-block;
         color: var(--white);
-        background: var(--gradient);
+        background: var(--primary);
         border: 10px solid var(--white);
     }
 
@@ -139,7 +139,7 @@
         text-align: center;
         text-transform: uppercase;
         color: var(--white);
-        background: var(--gradient);
+        background: var(--primary);
     }
 
     small {
@@ -155,7 +155,7 @@
 }
 
 .price-card.active {
-    background: var(--gradient);
+    background: var(--primary);
 
     h3,
     h4,
