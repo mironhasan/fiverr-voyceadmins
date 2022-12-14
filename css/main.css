@@ -455,11 +455,14 @@ body {
   background: var(--focus);
   text-align: center;
 }
-.price-card i {
+.price-card .round-link {
   width: 130px;
   height: 130px;
-  font-size: 48px;
-  line-height: 125px;
+  line-height: 115px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
   border-radius: 50%;
   margin-top: -65px;
   margin-bottom: 25px;
@@ -483,9 +486,8 @@ body {
 .price-card ul {
   text-align: left;
   padding: 10px 0px;
-  margin: 0 auto 25px;
+  margin: 0 auto 10px;
   border-top: 1px solid var(--light);
-  border-bottom: 1px solid var(--light);
 }
 .price-card ul li {
   font-size: 15px;
@@ -542,11 +544,12 @@ body {
   content: "\f059";
 }
 .price-card h4 {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
   margin-bottom: 15px;
-  font-style: italic;
+  letter-spacing: 1px;
   text-transform: uppercase;
+  color: var(--text);
 }
 .price-card h4 del {
   color: var(--light);
@@ -567,9 +570,11 @@ body {
   margin-bottom: 30px;
   text-transform: uppercase;
 }
-.price-card a {
+.price-card .full-link {
   width: 100%;
+  font-size: 16px;
   font-weight: 600;
+  letter-spacing: 0.5px;
   padding: 12px 0px;
   text-align: center;
   text-transform: uppercase;
@@ -614,7 +619,7 @@ body {
 .price-card.active ul li a::before {
   color: var(--primary-light);
 }
-.price-card.active a {
+.price-card.active .full-link {
   color: var(--primary);
   background: var(--white);
 }
