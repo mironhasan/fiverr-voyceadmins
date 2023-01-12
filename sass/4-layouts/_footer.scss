@@ -1,46 +1,74 @@
-
-
-
-
-/*-----------------------------
-        FOOTER LAYOUT
-------------------------------*/ 
 .footer-part {
     padding: 100px 0px 0px;
     background: var(--dark);
 }
 
-.footer-brand {
-    a {
-        img {
-            height: 45px;
-            margin-bottom: 25px;
-        }
+.footer-brand-logo {
+    img {
+        height: 45px;
+        margin-bottom: 25px;
     }
+}
 
-    p {
-        font-size: 16px;
+.footer-brand-text {
+    font-size: 16px;
+    color: var(--light);
+    margin-bottom: 10px;
+}
+
+.footer-brand-list {
+    margin-bottom: 15px;
+
+    li {
+        font-size: 15px;
         color: var(--light);
-        margin-bottom: 20px;
-    }
 
-    ul {
-        li {
-            font-size: 15px;
-            color: var(--light);
-
-            span {
-                font-weight: 500;
-                text-transform: capitalize;
-            }
+        span {
+            font-weight: 500;
+            margin-right: 5px;
+            text-transform: capitalize;
         }
     }
 }
 
-.footer-devider {
-    margin-bottom: 55px;
-    padding-bottom: 45px;
-    border-bottom: 1px solid var(--primary-deep);
+.footer-brand-action {
+    @include flex__center__start;
+    gap: 10px;
+
+    h4 {
+        font-size: 15px;
+        font-weight: 500;
+        color: var(--light);
+        text-transform: capitalize;
+    }
+
+    nav {
+        @include flex__center__start;
+        gap: 10px;
+
+        img {
+            width: 50px;
+        }
+    }
+
+    &.payment {
+        margin-bottom: 15px;
+    }
+
+    &.social {
+        a {
+            gap: 5px;
+            font-size: 13px;
+            padding: 3px 12px;
+            letter-spacing: 0.3px;
+            @include flex__center;
+            text-transform: capitalize;
+            color: var(--white);
+
+            &.facebook { background-color: var(--facebook) }
+            &.linkedin { background-color: var(--linkedin) }
+        }
+    }
 }
 
 .footer-widget {
@@ -96,68 +124,6 @@
                     &::before {
                         color: var(--white);
                     }
-                }
-            }
-        }
-    }
-}
-
-.footer-action {
-    .action-title {
-        margin-bottom: 25px;
-        @include flex__center__start;
-    
-        i {
-            font-size: 16px;
-            margin-right: 10px;
-            color: var(--bs-teal);
-        }
-    
-        span {
-            color: var(--chalk);
-            text-transform: capitalize;
-        }
-    }
-
-    .action-badge {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 15px;
-    
-        img {
-            height: 60px;
-        }
-    }
-
-    .action-card {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 15px;
-    
-        img {
-            width: 60px;
-        }
-    }
-
-    .action-list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 15px;
-
-        li {
-            a {
-                width: 50px;
-                height: 50px;
-                font-size: 16px;
-                line-height: 50px;
-                text-align: center;
-                color: var(--chalk);
-                background: var(--primary);
-                @include cursor__transition;
-    
-                &:hover {
-                    color: var(--primary);
-                    background: var(--chalk);
                 }
             }
         }

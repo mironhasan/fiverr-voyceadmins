@@ -1,0 +1,30 @@
+.feature-card {
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 5px solid #eff6ff;
+    box-shadow: var(--xs-bshadow);
+    background-color: var(--white);
+    @include cursor__transition;
+
+    &:hover {
+        border-color: #b2d2ff;
+        box-shadow: var(--sm-bshadow);
+    }
+
+    i {
+        font-size: 50px;
+        margin-bottom: 25px;
+        color: var(--primary);
+    }
+
+    h3 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 12px;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+}

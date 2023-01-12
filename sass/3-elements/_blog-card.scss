@@ -1,0 +1,108 @@
+.blog-media {
+    margin-bottom: 10px;
+    
+    a {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+.blog-content {
+    padding: 0px 10px;
+
+    ul {
+        @include flex__center__start;
+        flex-wrap: wrap;
+        row-gap: 15px;
+        column-gap: 30px;
+        margin-bottom: 10px;
+    
+        li {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+    
+            i {
+                color: var(--primary);
+                font-size: 14px;
+            }
+    
+            a,
+            span {
+                font-size: 14px;
+                font-weight: 500;
+                white-space: nowrap;
+                text-transform: uppercase;
+            }
+    
+            a {
+                color: var(--text);
+                @include cursor__transition;
+    
+                &:hover {
+                    color: var(--primary);
+                }
+            }
+        }
+    }
+
+    h4 {
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: -0.6px;
+        margin-bottom: 15px;
+
+        a {
+            color: var(--heading);
+            @include cursor__transition;
+
+            &:hover {
+                color: var(--primary);
+            }
+        }
+    }
+
+    p {
+        a {
+            font-weight: 600;
+            color: var(--primary);
+            text-transform: capitalize;
+            @include cursor__transition;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+//========================================
+//      RESPONIVE BLOG CRAD STYLE
+//========================================
+@media (max-width: 575px) {
+    .blog-card {
+        width: 296px;
+    }
+
+    .blog-content {
+        margin: 0px;
+
+        ul {
+            li {
+                margin-right: 20px;
+
+                i {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .blog-card {
+        width: 320px;
+    }
+}

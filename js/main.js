@@ -1,3 +1,5 @@
+"use strict";
+
 //========================================
 //          HEADER ALERT FIXED
 //========================================
@@ -22,3 +24,4 @@ $('.header-menu').on('click', function(){
         $('.header-navbar').removeClass('active');
     });
 });
+

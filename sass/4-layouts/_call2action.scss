@@ -1,28 +1,33 @@
+.call2action-overlay {
+    margin-top: -125px;
+    padding: 200px 0px 100px;
+    background-color: rgba(255, 255, 255, 0.7);
 
+    .row {
+        align-items: center;
+    }
+}
 
+.call2action-image {
+    margin-right: 30px;
 
+    img {
+        width: 100%;
+    }
+}
 
-/*-----------------------------
-      CALL TO ACTION LAYOUT
-------------------------------*/ 
-.call2action-part {
-    text-align: center;
-    padding: 110px 0px 120px;
-    background: url(../images/pattern/round.jpg);
-    @include background__property;
-
+.call2action-content {
     h2 {
         font-size: 50px;
         font-weight: 800;
         margin-bottom: 15px;
         letter-spacing: -1.5px;
-        @include text__gradient;
+        color: var(--primary);
     }
 
     p {
-        width: 750px;
         font-size: 20px;
-        margin: 0 auto 50px;
+        margin-bottom: 50px;
         letter-spacing: -0.5px;
     }
 }

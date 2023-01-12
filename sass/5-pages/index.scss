@@ -15,15 +15,13 @@
 .banner-content {
     margin-right: 30px;
     position: relative;
-
-    img {
-        animation: fly 5s linear infinite;
-        position: absolute;
-        top: -50px;
-        left: 50px;
-    }
+    text-align: center;
+    @include flex__center;
+    flex-direction: column;
 
     h1 {
+        width: 100%;
+        max-width: 1050px;
         font-size: 50px;
         font-weight: 700;
         line-height: 60px;
@@ -39,23 +37,31 @@
     }
 
     p {
+        width: 100%;
+        max-width: 950px;
         margin-bottom: 45px;
     }
 
-    div {
-        @include flex__center__start;
-        gap: 25px;
+    .btn-inline {
+        margin-bottom: 20px;
     }
 }
 
-.banner-image {
-    img {
-        width: 100%;
-        animation: miron 5s linear infinite;
-    }
+.paper-plane {
+    position: absolute;
+    top: -50px;
+    left: 50px;
+    animation: paper-plane 5s linear infinite;
 }
 
-@keyframes fly {
+.single-robot {
+    position: absolute;
+    bottom: 0px;
+    right: -70px;
+    animation: single-robot 5s linear infinite;
+}
+
+@keyframes paper-plane {
     0% {
       transform: rotateX(-0deg);
       left: 150px;
@@ -73,15 +79,15 @@
     }
 }
 
-@keyframes miron {
+@keyframes single-robot {
     0% {
-      transform: translateY(20px) rotateY(-25deg);
+      transform: translateY(25px);
     }
     50% {
-        transform: translateY(-20px) rotateY(-10deg);
+        transform: translateY(-25px);
     }
     100% {
-        transform: translateY(20px) rotateY(-25deg);
+        transform: translateY(25px);
     }
 }
 
@@ -140,4 +146,15 @@
     }
 }
 
+
+/*========================================
+            FEATURE PART STYLE
+=========================================*/
+.feature-image {
+    margin-right: 30px;
+
+    img {
+        width: 100%;
+    }
+}
 

@@ -1,0 +1,188 @@
+/*========================================
+            BANNER PART STYLE
+=========================================*/
+.banner-overlay {
+  padding: 175px 0px 95px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.banner-content {
+  margin-right: 30px;
+  position: relative;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.banner-content h1 {
+  width: 100%;
+  max-width: 1050px;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60px;
+  margin-bottom: 20px;
+  letter-spacing: -1.5px;
+  text-transform: capitalize;
+}
+.banner-content h1 span {
+  background: var(--primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.banner-content p {
+  width: 100%;
+  max-width: 950px;
+  margin-bottom: 45px;
+}
+.banner-content .btn-inline {
+  margin-bottom: 20px;
+}
+
+.paper-plane {
+  position: absolute;
+  top: -50px;
+  left: 50px;
+  -webkit-animation: paper-plane 5s linear infinite;
+          animation: paper-plane 5s linear infinite;
+}
+
+.single-robot {
+  position: absolute;
+  bottom: 0px;
+  right: -70px;
+  -webkit-animation: single-robot 5s linear infinite;
+          animation: single-robot 5s linear infinite;
+}
+
+@-webkit-keyframes paper-plane {
+  0% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+    left: 150px;
+    top: -120px;
+  }
+  50% {
+    -webkit-transform: rotateX(-50deg);
+            transform: rotateX(-50deg);
+    left: 50px;
+    top: -50px;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+    left: 150px;
+    top: -120px;
+  }
+}
+
+@keyframes paper-plane {
+  0% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+    left: 150px;
+    top: -120px;
+  }
+  50% {
+    -webkit-transform: rotateX(-50deg);
+            transform: rotateX(-50deg);
+    left: 50px;
+    top: -50px;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+    left: 150px;
+    top: -120px;
+  }
+}
+@-webkit-keyframes single-robot {
+  0% {
+    -webkit-transform: translateY(25px);
+            transform: translateY(25px);
+  }
+  50% {
+    -webkit-transform: translateY(-25px);
+            transform: translateY(-25px);
+  }
+  100% {
+    -webkit-transform: translateY(25px);
+            transform: translateY(25px);
+  }
+}
+@keyframes single-robot {
+  0% {
+    -webkit-transform: translateY(25px);
+            transform: translateY(25px);
+  }
+  50% {
+    -webkit-transform: translateY(-25px);
+            transform: translateY(-25px);
+  }
+  100% {
+    -webkit-transform: translateY(25px);
+            transform: translateY(25px);
+  }
+}
+@media (max-width: 991px) {
+  .banner-content {
+    text-align: center;
+    margin-right: 0px;
+  }
+  .banner-image {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .banner-overlay {
+    padding: 120px 0px 65px;
+  }
+  .banner-content h1 {
+    font-size: 38px;
+    line-height: 48px;
+  }
+  .banner-content div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  .banner-overlay {
+    padding: 135px 0px 80px;
+  }
+  .banner-content h1 {
+    font-size: 45px;
+    line-height: 55px;
+  }
+  .banner-content div {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .banner-content h1 {
+    font-size: 42px;
+    line-height: 52px;
+  }
+}
+/*========================================
+            FEATURE PART STYLE
+=========================================*/
+.feature-image {
+  margin-right: 30px;
+}
+.feature-image img {
+  width: 100%;
+}
