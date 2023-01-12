@@ -1,51 +1,19 @@
 .call2action-overlay {
-    margin-top: -125px;
-    padding: 200px 0px 100px;
+    padding: 100px 0px;
     background-color: rgba(255, 255, 255, 0.7);
 
     .row {
         align-items: center;
     }
+
+    .section-heading {
+        margin-left: 30px;
+        margin-bottom: 0px;
+    }
 }
 
 .call2action-image {
-    margin-right: 30px;
-
     img {
-        width: 100%;
-    }
-}
-
-.call2action-content {
-    h2 {
-        font-size: 50px;
-        font-weight: 800;
-        margin-bottom: 15px;
-        letter-spacing: -1.5px;
-        color: var(--primary);
-    }
-
-    p {
-        font-size: 20px;
-        margin-bottom: 50px;
-        letter-spacing: -0.5px;
-    }
-}
-
-@media (max-width: 575px) {
-    .call2action-part {
-        h2 {
-            font-size: 32px;
-        }
-    }
-}
-
-@media (max-width: 991px) {
-    .call2action-part {
-        padding: 60px 0px 70px;
-
-        p {
-            width: 100%;
-        }
+        width: auto;
     }
 }

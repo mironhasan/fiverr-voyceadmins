@@ -1,5 +1,5 @@
 /*========================================
-            ALL COMMON STYLE
+        1 - ALL COMMON STYLE
 =========================================*/
 @import '1-helpers/typography';
 @import '1-helpers/variable';
@@ -9,7 +9,7 @@
 
 
 /*========================================
-            ALL COMPONENTS STYLE
+        2 - ALL COMPONENTS STYLE
 =========================================*/
 @import '2-components/section';
 @import '2-components/button';
@@ -20,7 +20,7 @@
 
 
 /*========================================
-            ALL ELEMENTS STYLE
+        3 - ALL ELEMENTS STYLE
 =========================================*/
 @import '3-elements/price-card';
 @import '3-elements/service-card';
@@ -32,7 +32,7 @@
 
 
 /*========================================
-             ALL LAYOUTS STYLE
+        4 - ALL LAYOUTS STYLE
 =========================================*/
 @import '4-layouts/header-top';
 @import '4-layouts/header';
@@ -45,3 +45,14 @@
 @import '4-layouts/top-filter';
 @import '4-layouts/video';
 @import '4-layouts/footer';
+
+
+/*========================================
+        5 - ALL PAGES STYLE
+=========================================*/
+@import '5-pages/about-us.scss';
+@import '5-pages/blog-details.scss';
+@import '5-pages/blog-list.scss';
+@import '5-pages/contact.scss';
+@import '5-pages/index.scss';
+@import '5-pages/pricing.scss';
